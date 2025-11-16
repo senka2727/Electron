@@ -1,5 +1,4 @@
 import ElectronLogo from '../assets/ElectronLogo.png';
-import { FaSearch } from 'react-icons/fa';
 import { FaHeart } from "react-icons/fa";
 import { IoPersonSharp } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";

@@ -409,3 +409,8 @@ footer {
     text-align: center;
     align-content: center;
 }
+
+/* OTHER TEST STUFF */
+.ProfilePage .BaseInfoContainer .ProfilePicture {
+    background-image: url("assets/PFPPlaceholder.png");
+}
