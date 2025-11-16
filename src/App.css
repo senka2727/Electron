@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap');
+
+:root {
+    --bg-dark: oklch(0.1 0 219);
+    --bg: rgb(11, 11, 11);
+    --bg-light: oklch(0.2 0 219);
+    --text: oklch(0.96 0 219);
+    --text-muted: oklch(0.76 0 219);
+    --highlight: oklch(0.5 0 219);
+    --border: oklch(0.4 0 219);
+    --primary: oklch(79.73% 0.10556 219.223);
+    --primary-light: oklch(0.76 0.1 219);
+    --primary-dark: oklch(64.795% 0.08446 218.361);
+    --secondary: oklch(0.76 0.1 39);
+    --info: oklch(0.7 0.05 260);
+
+    --small-text: 0.7rem;
+    --default-text: 1rem;
+}
+
+* {
+    scroll-behavior: smooth;
+    transition: 0.1s ease-out;
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    color: var(--text);
+
+    background-color: var(--bg-light);
+
+
+    font-family: "Stack Sans Headline", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a:hover, button:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: underline;
+    color: var(--primary-light);
+}
+
+.Divider {
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-muted);
+}
+
+/* NAVBAR STYLES */
+nav {
+    width: 100%;
+    height: 150px;
+    
+    background-color: var(--primary);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav .TopRow {
+    width: 80%;
+    height: 25%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .BottomRow {
+    width: 85%;
+    height: 75%;
+
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* top row */
+nav .TopRow .Location {
+    height: 100%;
+
+    color: var(--border);
+}
+
+nav .TopRow .Controls {
+    width: 7%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+nav .TopRow .Controls a {
+    display: block;
+
+    width: 45px;
+    height: 30px;
+
+    text-align: center;
+    line-height: 30px;
+    
+    text-decoration: none;
+    color: var(--text);
+
+    background-color: var(--primary-dark);
+    border-radius: 5px;
+}
+
+nav .TopRow .Controls a:hover {
+    background-color: var(--primary-light);
+}
+
+/* bottom row */
+nav .BottomRow .Logo {
+    height: 100%;
+}
+
+nav .BottomRow .Logo img {
+    height: 100%;
+}
+
+nav .BottomRow .SearchSection {
+    width: 50%;
+    height: 40%;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    gap: 15px;
+}
+
+nav .BottomRow .SearchSection button:hover {
+    font-size: 16px;
+}
+
+nav .BottomRow .SearchSection input {
+    width: 80%;
+    height: 100%;
+
+    outline: none;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    font-size: 1rem;
+    text-indent: 5px;
+    font-family: "Stack Sans Headline", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    transition: 0s;
+}
+
+nav .BottomRow .SearchSection input:focus {
+    border: 2px solid var(--border);
+}
+
+nav .BottomRow .SearchSection Button {
+    width: 51px;
+    height: 51px;
+
+    border-radius: 5px;
+    background-color: var(--primary-dark);
+
+    color: var(--text);
+
+    border: 1px solid var(--border);
+}
+
+nav .BottomRow .OtherTabs {
+    width: 10%;
+    height: 40%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .BottomRow .OtherTabs .NavLink {
+    width: 30%;
+    height: 100%;
+
+    text-align: center;
+    line-height: 51px;
+
+    text-decoration: none;
+    color: var(--text);
+
+    border-radius: 5px;
+    background-color: var(--primary-dark);
+}
+
+nav .BottomRow .OtherTabs .NavLink:hover {
+    background-color: var(--primary-light);
+}
+
+@media(max-width:1170px) {
+    nav .BottomRow .OtherTabs {
+        width: 25%;
+        justify-content: center;
+        gap: 2px;
+    }
+
+    nav .BottomRow .SearchSection {
+        gap:0;
+    }
+
+    nav .BottomRow .SearchSection button {
+        width: 45px;
+        height: 45px;
+    }
+
+    nav .BottomRow .Logo {
+        height: 75%;
+    }
+}
+
+@media(max-width: 740px) {
+    nav .BottomRow .OtherTabs {
+        width: 25%;
+        justify-content: center;
+        gap: 2px;
+    }
+
+    nav .BottomRow .SearchSection {
+        gap:0;
+    }
+
+    nav .BottomRow .SearchSection button {
+        width: 45px;
+        height: 45px;
+    }
+
+    nav .BottomRow .Logo {
+        height: 50%;
+    }
+
+    /* nav {
+        height: 100px;
+    } */
+}
+
+@media(max-width: 600px) {
+    nav .BottomRow .SearchSection {
+        justify-content: center;
+        width: 10%;
+    }
+    nav .BottomRow .SearchSection input {
+        /* display: none; */
+    }
+
+    nav .BottomRow .Logo {
+        height: 35%;
+    }
+}
+
+.SearchResults {
+    width: 100%;
+    display: none;
+
+    border-radius: 15px;
+    background-color: var(--bg);
+
+    margin: 50px 0px;
+    padding: 15px 0px;
+
+    grid-template-columns: repeat(auto-fill, 250px);
+    row-gap: 35px;
+    justify-content: space-around;
+}
+
+/* PRE MAIN CONTENT STYLES */
+#Banner {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.7s ease;  
+    position: relative;
+}
+
+#Banner .Group {
+    display: flex;
+    flex: 0 0 auto;
+    transition: 0.7s ease;
+    gap: 10px;
+    transform: translateX(375px);
+}
+
+#Banner .Group div {
+    width: 750px;
+    height: 350px;
+    flex: 0 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Banner .Element1 { background-image: url(assets/Banners/banner1.jpg); }
+#Banner .Element2 { background-image: url(assets/Banners/banner2.jpg); }
+#Banner .Element3 { background-image: url(assets/Banners/banner3.jpg); }
+#Banner .Element4 { background-image: url(assets/Banners/banner4.jpg); }
+
+#Banner .MoveRight,
+#Banner .MoveLeft {
+    position: absolute;
+    width: 25px;
+    height: 75px;
+    border-radius: 15px;
+    outline: 0;
+    border: 1px solid var(--primary);
+    background-color: var(--primary-dark);
+    color: var(--text);
+}
+
+#Banner .MoveRight:hover,
+#Banner .MoveLeft:hover {
+    transform: scale(1.05);
+}
+
+#Banner .MoveRight {
+    right: 15px;
+    top: 125px;
+}
+
+#Banner .MoveLeft {
+    left: 15px;
+    top: 125px;
+}
+
+/* MAIN CONTENT STYLES */
+main {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.Site{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.MainContent .Cards {
+    width: 90%;
+    /* margin-top: 50px; */
+}
+
+.MainContent .Cards .Row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.MainContent .Cards .CardsContent {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    row-gap: 35px;
+    justify-content: space-between;
+}
+
+@media (max-width: 1170px){
+    .MainContent .Cards .CardsContent {
+        justify-content: space-evenly;
+    }
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 150px;
+
+    margin-top: 50px;
+
+    text-align: center;
+    align-content: center;
+
+    background-color: var(--bg-dark);
+}
+
+@media (max-width: 740px){
+    footer {
+        font-size: 0.7rem;
+    }
+}
+
+/* 404 PAGE STYLES */
+.PageNotFoundPage {
+    text-align: center;
+    align-content: center;
+}

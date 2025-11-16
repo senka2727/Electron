@@ -1,0 +1,144 @@
+.ProfilePage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    margin-top: 50px;
+}
+
+.ProfilePage .BaseInfoContainer {
+    width: 300px;
+    height: 600px;
+    border-radius: 15px;
+    background-color: var(--bg);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ProfilePage .BaseInfoContainer .ProfilePicture{
+    width: 75px;
+    height: 75px;
+    background-image: url("src/assets/PFPPlaceholder.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+}
+
+.ProfilePage .BaseInfoContainer .Divider {
+    width: 80%;
+    height: 1px;
+
+    margin: 10px 0;
+}
+
+.ProfilePage .BaseInfoContainer h4 {
+    margin: 10px 0;
+}
+
+.ProfilePage .BaseInfoContainer .Link {
+    width: 90%;
+    height: 30px;
+    
+    display: block;
+    background-color: var(--bg-light);
+    color: var(--text);
+    text-decoration: none;
+    align-content: center;
+    text-indent: 15px;
+
+    border-radius: 5px;
+
+    margin-top: 5px;
+}
+
+.ProfilePage .BaseInfoContainer .Link:hover {
+    background-color: var(--primary);
+}
+
+.ProfilePage .DetailsContainer {
+    width: 50%;
+    height: 600px;
+    border-radius: 15px;
+    background-color: var(--bg);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ProfilePage .DetailsContainer .RowTwoEl,
+.ProfilePage .DetailsContainer .RowThreeEl {
+    width: 90%;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 35px;
+}
+
+.ProfilePage .DetailsContainer .RowTwoEl .Element {
+    width: 45%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--bg-light);
+    border-radius: 15px;
+}
+
+.ProfilePage .DetailsContainer .RowTwoEl .Element .Link {
+    text-decoration: none;
+}
+
+.ProfilePage .DetailsContainer .RowThreeEl .Link {
+    width: 30%;
+    height: 60px;
+    background-color: var(--bg-light);
+
+    border-radius: 15px;
+    text-indent: 15px;
+    align-content: center;
+    text-decoration: none;
+}
+
+@media(max-width:1170px) {
+    .ProfilePage .DetailsContainer .RowTwoEl .Element {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .ProfilePage .DetailsContainer .RowThreeEl .Link {
+        font-size: 13px;
+        text-indent: 0px;
+        text-align: center;
+        align-content: center;
+    }
+}
+
+@media(max-width: 740px) {
+    .ProfilePage .DetailsContainer {
+        width: 60%;
+    }
+
+    .ProfilePage {
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+@media(max-width: 600px) {
+    .ProfilePage {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .ProfilePage .DetailsContainer .RowThreeEl .Link {
+        font-size: 10px;
+    }
+}

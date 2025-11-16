@@ -1,0 +1,170 @@
+.CartPage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    margin-top: 50px;
+}
+
+.CartPage .ProductsContainer {
+    width: 50%;
+    border-radius: 15px;
+    background-color: var(--bg);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CartPage .ProductsContainer .RowTwoEl,
+.CartPage .ProductsContainer .RowThreeEl {
+    width: 90%;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 35px;
+}
+
+.CartPage .ProductsContainer .RowTwoEl .Element {
+    width: 45%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--bg-light);
+    border-radius: 15px;
+}
+
+.CartPage .ProductsContainer .RowTwoEl .Element .Link {
+    text-decoration: none;
+}
+
+.CartPage .ProductsContainer .RowThreeEl .Link {
+    width: 30%;
+    height: 60px;
+    background-color: var(--bg-light);
+
+    border-radius: 15px;
+    text-indent: 15px;
+    align-content: center;
+    text-decoration: none;
+}
+
+
+.CartPage .CheckoutContainer {
+    width: 300px;
+    height: 600px;
+    border-radius: 15px;
+    background-color: var(--bg);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.CartPage .CheckoutContainer .CheckoutElement{
+    width: 100%;
+    height: 35px;
+    /* border: 1px solid red; */
+    border-radius: 15px;
+    background-color: var(--bg);
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.CartPage .CheckoutContainer .CheckoutElement .LeftText,
+.CartPage .CheckoutContainer .CheckoutElement .RightText{
+    width: 40%;   
+}
+
+.CartPage .CheckoutContainer .CheckoutElement .RightText {
+    text-align: right;
+}
+
+.CartPage .CheckoutContainer .Link {
+    width: 90%;
+    height: 30px;
+    
+    display: block;
+    background-color: var(--bg-light);
+    color: var(--text);
+    text-decoration: none;
+    align-content: center;
+    text-indent: 15px;
+
+    border-radius: 5px;
+
+    margin-top: 5px;
+}
+
+.CartPage .CheckoutContainer .Link:hover {
+    color: var(--primary);
+}
+
+
+.CartPage .CheckoutContainer .OrderButton {
+    width: 95%;
+    height: 50px;
+    
+    display: block;
+    background-color: var(--primary);
+    color: var(--text);
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+
+    border-radius: 5px;
+
+    margin-top: 290px;
+}
+
+.CartPage .CheckoutContainer .OrderButton:hover {
+    background-color: var(--primary-light);
+}
+
+.CartPage .CheckoutContainer .OrderButton:active {
+    background-color: var(--primary-dark);
+}
+
+@media(max-width:1170px) {
+    .CartPage .ProductsContainer .RowTwoEl .Element {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .CartPage .ProductsContainer .RowThreeEl .Link {
+        font-size: 13px;
+        text-indent: 0px;
+        text-align: center;
+        align-content: center;
+    }
+}
+
+@media(max-width: 740px) {
+    .CartPage .ProductsContainer {
+        width: 60%;
+    }
+
+    .CartPage {
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+@media(max-width: 600px) {
+    .CartPage {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .CartPage .ProductsContainer .RowThreeEl .Link {
+        font-size: 10px;
+    }
+}
