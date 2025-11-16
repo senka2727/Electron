@@ -40,7 +40,7 @@ const ProductCard = ({Id, Price, OldPrice, CompanyName, ProductName, Rating, Rev
         {isFav ? <button className='UnfavouriteButton' onClick={RemoveFromFavourites}><FaHeartBroken/></button> :
         <button className='FavouriteButton' onClick={AddToFavourites}><FaHeart/></button>}
         
-        <div className='Preview' style={{ backgroundImage: `url(${Image})`}}></div>
+        <div className='Preview' style={{ backgroundImage: `url(../${Image})`}}></div>
         <div className='Info'>
             <div className='PriceSection'>
                 {CheckIfDiscountAvailable()}
