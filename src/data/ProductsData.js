@@ -1,3 +1,21 @@
+// Импорты всех картинок
+import Preview1 from '../assets/ProductPhotos/GamingDevices/g102.jpg';
+import Preview2 from '../assets/ProductPhotos/GamingDevices/DeathAdderE.jpg';
+import Preview3 from '../assets/ProductPhotos/GamingDevices/Rival3Wireless.jpg';
+import Preview4 from '../assets/ProductPhotos/GamingDevices/RedragonKumara.png';
+import Preview5 from '../assets/ProductPhotos/GamingDevices/Cloud2.jpg';
+import Preview6 from '../assets/ProductPhotos/GamingDevices/HS55.jpg';
+import Preview7 from '../assets/ProductPhotos/PCComponents/5600x.jpg';
+import Preview8 from '../assets/ProductPhotos/PCComponents/i712700k.jpg';
+import Preview9 from '../assets/ProductPhotos/PCComponents/4070ti.jpg';
+import Preview10 from '../assets/ProductPhotos/PCComponents/b550-plus.jpg';
+import Preview11 from '../assets/ProductPhotos/PCComponents/Vengance32gb.webp';
+import Preview12 from '../assets/ProductPhotos/PCComponents/rx7900xt.jpg';
+import Preview13 from '../assets/ProductPhotos/PCComponents/Sn850x.jpg';
+import Preview14 from '../assets/ProductPhotos/PCComponents/Hyper212.jpg';
+import Preview15 from '../assets/ProductPhotos/PCComponents/MAGB760.jpg';
+import Preview16 from '../assets/ProductPhotos/PCComponents/FocusGX750.jpg';
+
 const ProductsData = [
     {
         id: 0,
@@ -6,7 +24,7 @@ const ProductsData = [
         ProductName: "G102 Lightsync",
         Rating: "4.9",
         ReviewsCount: 10432,
-        Image: "assets/ProductPhotos/GamingDevices/g102.jpg",
+        Image: Preview1,
         Category: "Gaming Devices",
         Tags: ["mouse", "gaming mouse", "lightsync", "budget", "logitech"]
     },
@@ -18,7 +36,7 @@ const ProductsData = [
         ProductName: "DeathAdder Essential",
         Rating: "4.7",
         ReviewsCount: 8231,
-        Image: "assets/ProductPhotos/GamingDevices/DeathAdderE.jpg",
+        Image: Preview2,
         Category: "Gaming Devices",
         Tags: ["mouse", "gaming mouse", "deathadder", "ergonomic", "razer", "gaming"]
     },
@@ -29,7 +47,7 @@ const ProductsData = [
         ProductName: "Rival 3 Wireless",
         Rating: "4.8",
         ReviewsCount: 5320,
-        Image: "assets/ProductPhotos/GamingDevices/Rival3Wireless.jpg",
+        Image: Preview3,
         Category: "Gaming Devices",
         Tags: ["mouse", "gaming mouse", "wireless", "rival", "steelseries", "gaming"]
     },
@@ -41,7 +59,7 @@ const ProductsData = [
         ProductName: "K552 Kumara",
         Rating: "4.6",
         ReviewsCount: 6401,
-        Image: "assets/ProductPhotos/GamingDevices/RedragonKumara.png",
+        Image: Preview4,
         Category: "Gaming Devices",
         Tags: ["keyboard", "mechanical", "redragon", "kumara", "gaming"]
     },
@@ -52,7 +70,7 @@ const ProductsData = [
         ProductName: "Cloud II",
         Rating: "4.9",
         ReviewsCount: 11245,
-        Image: "assets/ProductPhotos/GamingDevices/Cloud2.jpg",
+        Image: Preview5,
         Category: "Gaming Devices",
         Tags: ["headset", "cloud2", "hyperx", "gaming audio", "surround"]
     },
@@ -64,7 +82,7 @@ const ProductsData = [
         ProductName: "HS55 Surround",
         Rating: "4.7",
         ReviewsCount: 3850,
-        Image: "assets/ProductPhotos/GamingDevices/HS55.jpg",
+        Image: Preview6,
         Category: "Gaming Devices",
         Tags: ["headset", "surround", "corsair", "gaming audio", "comfortable"]
     },
@@ -75,7 +93,7 @@ const ProductsData = [
         ProductName: "Ryzen 5 5600X",
         Rating: "4.9",
         ReviewsCount: 15820,
-        Image: "assets/ProductPhotos/PCComponents/5600x.jpg",
+        Image: Preview7,
         Category: "PC Components",
         Tags: ["cpu", "ryzen", "5600x", "gaming cpu", "amd"]
     },
@@ -87,7 +105,7 @@ const ProductsData = [
         ProductName: "Core i7-12700K",
         Rating: "4.8",
         ReviewsCount: 10214,
-        Image: "assets/ProductPhotos/PCComponents/i712700k.jpg",
+        Image: Preview8,
         Category: "PC Components",
         Tags: ["cpu", "i7", "intel", "12700k", "high performance"]
     },
@@ -98,7 +116,7 @@ const ProductsData = [
         ProductName: "GeForce RTX 4070 Ti",
         Rating: "4.9",
         ReviewsCount: 8340,
-        Image: "assets/ProductPhotos/PCComponents/4070ti.jpg",
+        Image: Preview9,
         Category: "PC Components",
         Tags: ["gpu", "4070ti", "rtx", "nvidia", "high-end"]
     },
@@ -110,7 +128,7 @@ const ProductsData = [
         ProductName: "TUF Gaming B550-PLUS",
         Rating: "4.7",
         ReviewsCount: 4911,
-        Image: "assets/ProductPhotos/PCComponents/b550-plus.jpg",
+        Image: Preview10,
         Category: "PC Components",
         Tags: ["motherboard", "b550", "asus", "tuf", "amd build"]
     },
@@ -121,7 +139,7 @@ const ProductsData = [
         ProductName: "Vengeance RGB Pro 32GB DDR4",
         Rating: "4.8",
         ReviewsCount: 9230,
-        Image: "assets/ProductPhotos/PCComponents/Vengance32gb.webp",
+        Image: Preview11,
         Category: "PC Components",
         Tags: ["ram", "ddr4", "corsair", "rgb", "32gb"]
     },
@@ -132,7 +150,7 @@ const ProductsData = [
         ProductName: "Radeon RX 7900 XT",
         Rating: "4.8",
         ReviewsCount: 6120,
-        Image: "assets/ProductPhotos/PCComponents/rx7900xt.jpg",
+        Image: Preview12,
         Category: "PC Components",
         Tags: ["gpu", "7900xt", "radeon", "amd", "high-end"]
     },
@@ -144,7 +162,7 @@ const ProductsData = [
         ProductName: "SN850X 1TB NVMe SSD",
         Rating: "4.9",
         ReviewsCount: 7854,
-        Image: "assets/ProductPhotos/PCComponents/Sn850x.jpg",
+        Image: Preview13,
         Category: "PC Components",
         Tags: ["ssd", "nvme", "sn850x", "1tb", "fast storage"]
     },
@@ -155,7 +173,7 @@ const ProductsData = [
         ProductName: "Hyper 212 Black Edition",
         Rating: "4.6",
         ReviewsCount: 5340,
-        Image: "assets/ProductPhotos/PCComponents/Hyper212.jpg",
+        Image: Preview14,
         Category: "PC Components",
         Tags: ["cooler", "air cooling", "hyper212", "cooler master", "cpu cooler"]
     },
@@ -167,7 +185,7 @@ const ProductsData = [
         ProductName: "MAG B760 Tomahawk WiFi DDR5",
         Rating: "4.8",
         ReviewsCount: 4578,
-        Image: "assets/ProductPhotos/PCComponents/MAGB760.jpg",
+        Image: Preview15,
         Category: "PC Components",
         Tags: ["motherboard", "b760", "msi", "ddr5", "intel build"]
     },
@@ -178,7 +196,7 @@ const ProductsData = [
         ProductName: "Focus GX-750 80+ Gold PSU",
         Rating: "4.9",
         ReviewsCount: 3487,
-        Image: "assets/ProductPhotos/PCComponents/FocusGX750.jpg",
+        Image: Preview16,
         Category: "PC Components",
         Tags: ["psu", "750w", "80+ gold", "seasonic", "power supply"]
     },
